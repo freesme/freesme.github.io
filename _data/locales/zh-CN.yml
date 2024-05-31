@@ -18,13 +18,13 @@ tabs:
 
 # the text displayed in the search bar & search results
 search:
-  hint: 搜索
-  cancel: 取消
-  no_results: 搜索结果为空
+  hint: 搜一下
+  cancel: 不搜了
+  no_results: 啥也没搜到
 
 panel:
   lastmod: 最近更新
-  trending_tags: 热门标签
+  trending_tags: 大伙爱看
   toc: 文章内容
 
 copyright:
@@ -35,18 +35,18 @@ copyright:
     link: https://creativecommons.org/licenses/by/4.0/
 
   # Displayed in the footer
-  brief: 保留部分权利。
+  brief: 保留部分权利 (CC BY 4.0)
   verbose: >-
-    除非另有说明，本网站上的博客文章均由作者按照知识共享署名 4.0 国际 (CC BY 4.0) 许可协议进行授权。
+    允许自由地使用、分发、修改和基于原作创作衍生作品，在使用过程中给予原作者适当的署名
 
-meta: 本站采用 :PLATFORM 主题 :THEME
+meta: :PLATFORM :THEME
 
 not_found:
-  statment: 抱歉，我们放错了该 URL，或者它指向了不存在的内容。
+  statment: Sorry 这个url不知道被我搞到哪里去了...😅
 
 notification:
-  update_found: 发现新版本的内容。
-  update: 更新
+  update_found: 哥们，你这个版本太旧了🤦‍
+  update: 更新一下👌
 
 # ----- Posts related labels -----
 
@@ -65,10 +65,10 @@ post:
     next: 下一篇
     previous: 上一篇
     copy_code:
-      succeed: 已复制！
+      succeed: 复制好了👌🏻
     share_link:
-      title: 分享链接
-      succeed: 链接已复制！
+      title: 发给大伙看看
+      succeed: 复制好了👌🏻
 
 # Date time format.
 # See: <http://strftime.net/>, <https://day.js.org/docs/en/display/format>
