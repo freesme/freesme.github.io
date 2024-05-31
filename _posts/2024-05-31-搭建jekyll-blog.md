@@ -36,7 +36,7 @@ gem install jekyll
 
 ### Fork Chirpy并发布到Github
 
-建议使用[Chirpy Starter的方式](https://chirpy.cotes.page/posts/getting-started/#:~:text=is%20not%20recommended.-,Option%201.%20Using%20the%20Chirpy%20Starter,-Sign%20in%20to)创建自己的网站，fork完毕之后，修改 `_config.yml` 文件中的`url` 为自己的github.io地址后，[设置Github Action](https://chirpy.cotes.page/posts/getting-started/#:~:text=Next%2C%20configure%20the%20Pages%20service.) 设置![image-20240531141815015](/assets/img/2024-05-31-搭建jekyll-blog/image-20240531141815015.png)
+建议使用[Chirpy Starter的方式](https://chirpy.cotes.page/posts/getting-started/#:~:text=is%20not%20recommended.-,Option%201.%20Using%20the%20Chirpy%20Starter,-Sign%20in%20to)创建自己的网站，fork完毕之后，修改 `_config.yml` 文件中的`url` 为自己的github.io地址，[Github Action](https://chirpy.cotes.page/posts/getting-started/#:~:text=Next%2C%20configure%20the%20Pages%20service.) 设置![image-20240531141815015](/assets/img/2024-05-31-搭建jekyll-blog/image-20240531141815015.png)
 即可完成发布github io主页
 
 ### 在本地运行
