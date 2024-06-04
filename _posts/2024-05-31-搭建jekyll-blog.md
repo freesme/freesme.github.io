@@ -63,3 +63,5 @@ bundle --verbose
 bundle exec jekyll s
 ```
 
+### 添加新的页面
+安装[jekyll-compose](https://github.com/jekyll/jekyll-compose)插件
