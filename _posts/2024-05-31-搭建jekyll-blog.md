@@ -4,6 +4,7 @@ title: 搭建jekyll blog
 date: '2024-05-31 13:54:26 +0800'
 categories: [Demo]
 tag: [jekyll]
+comments: true
 ---
 
 #  搭建[Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy)主题 [Jekyll](https://jekyllrb.com/).
