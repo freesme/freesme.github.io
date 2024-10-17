@@ -126,7 +126,7 @@ Cicuit Relay协议的灵感来源于 [TURN](https://tools.ietf.org/html/rfc5766)
 
 下面的顺序图描述了一个示例中继过程：
 
-![Circuit v2 Protocol Interaction](https://raw.githubusercontent.com/libp2p/specs/master/relay/circuit-v2.svg)
+![circuit-v2.svg](../assets/img/nat-traversal/circuit-v2.svg)
 
 在这个场景中，Node A 位于 NAT 或防火墙后，无法通过直接的公网地址进行通信。通过 **AutoNAT** 服务，Node A 检测到自己无法对外公开地址，因此请求中继节点 **R** 进行**预留**（Reservation），即请求 **R** 代表自己监听传入的连接。
 
@@ -202,8 +202,7 @@ DCUtR协议支持TCP、QUIC等不同类型的连接，不同类型的连接建�
 
 下面的用例图说明了上面的过程。
 
-![img](https://docs.libp2p.io/concepts/assets/hole-punching/libp2p-hole-punching-2.svg/)
-
+<img src="../assets/img/nat-traversal/libp2p-hole-punching-2.svg" width="500" height="600"/>
 > 这个过程假定了一种同时同步A和B的机制。
 
 ### Hole punching in libp2p
@@ -212,8 +211,7 @@ DCUtR协议支持TCP、QUIC等不同类型的连接，不同类型的连接建�
 
 下面的顺序图说明了整个过程。
 
-![img](https://docs.libp2p.io/concepts/assets/hole-punching/libp2p-hole-punching-4.svg/)
-
+<img src="https://docs.libp2p.io/concepts/assets/hole-punching/libp2p-hole-punching-4.svg/" width="500" height="600"/>
 Libp2p打孔可分为两个阶段，准备阶段和打孔阶段。
 
 #### 第一阶段：准备
@@ -224,7 +222,7 @@ Libp2p打孔可分为两个阶段，准备阶段和打孔阶段。
 
 > IPFS通过Kademlia DHT使用查找方法发现k-最近的公共中继节点：/<RELAY_ADDR>/p2p-circuit/<PEER_ID_B>
 
-![img](https://docs.libp2p.io/concepts/assets/hole-punching/libp2p-hole-punching-6.svg/)
+![img](https://docs.libp2p.io/concepts/assets/hole-punching/libp2p-hole-punching-6.svg)
 
 B网络外的Other_Peers可以通过公共中继节点间接呼叫B。在[IPFS](https://ipfs.tech/)的情况下，每个公共节点将充当一个中继。B将在[Kademlia DHT](https://github.com/libp2p/specs/blob/master/kad-dht/README.md)上查找与其Peer ID最近的对等节点，或者选择已经连接到的公共节点的一个子集。
 
