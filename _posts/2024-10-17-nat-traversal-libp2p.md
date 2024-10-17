@@ -2,8 +2,8 @@
 layout: post
 title: NAT Traversal(libp2p)
 date: 2024-10-17 12:19 +0800
-categories: [ network ]
-tag: [ p2p ]
+categories: [ network,p2p ]
+tag: [ p2p, libp2p, NAT ]
 comments: true
 ---
 
