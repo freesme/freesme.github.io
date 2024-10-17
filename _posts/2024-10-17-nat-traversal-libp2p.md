@@ -147,13 +147,13 @@ Cicuit Relay协议的灵感来源于 [TURN](https://tools.ietf.org/html/rfc5766)
 
 ## 什么是通过中继直接连接升级？
 
-libp2p DCUtR （Direct Connection Upgrade through Relay）是一种通过打孔在节点之间建立直接连接的协议，不需要信令服务器。DCUtR包括同步和打开到每个对等端预测的外部地址的连接。
+libp2p DCUtR （Direct Connection Upgrade through Relay）是一种通过打洞在节点之间建立直接连接的协议，不需要信令服务器。DCUtR包括同步和打开到每个对等端预测的外部地址的连接。
 
 DCUtR协议使用协议ID /libp2p/ DCUtR，包括Connect和Sync消息的交换。
 
 DCUtR协议支持TCP、QUIC等不同类型的连接，不同类型的连接建立过程不同。
 
-@Dennis-tra有一个关于dcur和它的打孔成功率的[great talk](https://www.youtube.com/watch?v=fyhZWlDbcyM)。
+@Dennis-tra有一个关于dcur和它的打洞成功率的[great talk](https://www.youtube.com/watch?v=fyhZWlDbcyM)。
 
 了解NAT遍历如何工作的有用资源是Tailscale的[this blog post](https://tailscale.com/blog/how-nat-traversal-works/)。
 
@@ -212,7 +212,7 @@ DCUtR协议支持TCP、QUIC等不同类型的连接，不同类型的连接建�
 
 ![p-4.svg](../assets/img/nat-traversal/p-4.svg)
 
-Libp2p打孔可分为两个阶段，准备阶段和打孔阶段。
+Libp2p打洞可分为两个阶段，准备阶段和打洞阶段。
 
 #### 第一阶段：准备
 
@@ -250,7 +250,7 @@ B网络外的Other_Peers可以通过公共中继节点间接呼叫B。在[IPFS](
   - A和B可以使用Relay上的双向信道进行通信。
   - A和B使用TLS等安全协议升级已中继连接。
 
-2. [DCUtR](https://github.com/libp2p/specs/blob/master/relay/DCUtR.md)：使用DCUtR作为同步机构来协调打孔。
+2. [DCUtR](https://github.com/libp2p/specs/blob/master/relay/DCUtR.md)：使用DCUtR作为同步机构来协调打洞。
 
 
    ![img](https://docs.libp2p.io/concepts/assets/hole-punching/libp2p-hole-punching-9.svg/)
