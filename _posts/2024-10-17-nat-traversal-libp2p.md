@@ -201,8 +201,7 @@ DCUtR协议支持TCP、QUIC等不同类型的连接，不同类型的连接建�
 1. 路由器通过“打洞”将数据包转发给B。B的数据包也是如此；到达Router_A后，在Router_A的状态表中匹配一个5元组，将报文转发给A。
 
 下面的用例图说明了上面的过程。（图片显示似乎有些问题，请点击右键-在新标签页中打开链接）
-
-<img src="../assets/img/nat-traversal/libp2p-hole-punching-2.svg" width="500" height="600" />
+![libp2p-hole-punching-2.svg](../assets/img/nat-traversal/libp2p-hole-punching-2.svg)
 > 这个过程假定了一种同时同步A和B的机制。
 
 ### Hole punching in libp2p
@@ -211,7 +210,8 @@ DCUtR协议支持TCP、QUIC等不同类型的连接，不同类型的连接建�
 
 下面的顺序图说明了整个过程。
 
-<img src="https://docs.libp2p.io/concepts/assets/hole-punching/libp2p-hole-punching-4.svg" width="500" height="600" />
+![p-4.svg](../assets/img/nat-traversal/p-4.svg)
+
 Libp2p打孔可分为两个阶段，准备阶段和打孔阶段。
 
 #### 第一阶段：准备
