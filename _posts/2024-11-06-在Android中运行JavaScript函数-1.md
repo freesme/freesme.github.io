@@ -177,4 +177,4 @@ fun executeJavaScriptWithZipline(context: Context) {
 
 ~~在简单的JavaScript函数调用中Zipline执行并没有什么问题，当我测试业务需要使用的JS库时，可能是由于该库依赖了一些浏览器环境的一些对象，出现了一些错误，我尝试通过在 Kotlin 中注入相关定义: `val defineSelfScript = "var self = this;"` 由于时间限制的原因未能解决，最后放弃了这个方案，使用了最初的WebView方案。~~
 
-[2024-11-07-在Android(by zipline)和iOS(by JavaScriptCode)运行JavaScript函数-2.md](https://freesme.github.io/posts/%E5%9C%A8Android(by%20zipline)%E5%92%8CiOS(by%20JavaScriptCode)%E8%BF%90%E8%A1%8CJavaScript%E5%87%BD%E6%95%B0-2/)
+[2024-11-07-在Android(by zipline)和iOS(by JavaScriptCode)运行JavaScript函数-2.md](https://freesme.github.io/posts/%E5%9C%A8Android%E4%B8%AD%E8%BF%90%E8%A1%8CJavaScript%E5%87%BD%E6%95%B0-1/)
