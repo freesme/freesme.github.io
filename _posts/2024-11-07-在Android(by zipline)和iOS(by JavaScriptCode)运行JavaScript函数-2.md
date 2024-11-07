@@ -98,17 +98,17 @@ class AstrolabeTest {
 
 经过排查，`Zipline`不能成功调用js库的原因是原项目webpack打包时设置`libraryTarget: 'umd'将库打包成 **通用模块定义（Universal Module Definition，UMD）** 格式，将 UMD 格式的特点是兼容多种模块系统，包括 CommonJS、AMD 和作为全局变量的方式，虽然UMD兼容性广泛，但在没有模块系统的环境下，可能无法正确地将库暴露为全局变量。
 
-```json
+``` javascript
 module.exports = {
-  mode: 'none',
-  entry: './src/index.ts',
-  output: {
-    path: path.resolve(__dirname, 'dist'), // 指定打包文件的目录
-    filename: `example.min.js`, // 打包后文件的名称
-    library: 'foo', // 将打包后的代码作为一个全局变量可直接调用
-    libraryTarget: 'var', // 此处原本为 umd
-    umdNamedDefine: true, // 为UMD模块命名
-  }...
+    mode: 'none',
+    entry: './src/index.ts',
+    output: {
+      path: path.resolve(__dirname, 'dist'), // 指定打包文件的目录
+      filename: `example.min.js`, // 打包后文件的名称
+      library: 'foo', // 将打包后的代码作为一个全局变量可直接调用
+      libraryTarget: 'var', // 此处原本为 umd
+      umdNamedDefine: true, // 为UMD模块命名
+    }...
 ```
 
 在 **Zipline（QuickJS 引擎）** 的环境中：
