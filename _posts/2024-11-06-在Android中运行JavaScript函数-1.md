@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 在Android中运行JavaScript函数
+title: 在Android中运行JavaScript函数-1
 date: 2024-11-06 23:54 +0800
 categories: [TIL, Demo]
 ---
@@ -175,4 +175,6 @@ fun executeJavaScriptWithZipline(context: Context) {
 
 ```
 
-在简单的JavaScript函数调用中Zipline执行并没有什么问题，当我测试业务需要使用的JS库时，可能是由于该库依赖了一些浏览器环境的一些对象，出现了一些错误，我尝试通过在 Kotlin 中注入相关定义: `val defineSelfScript = "var self = this;"` 由于时间限制的原因未能解决，最后放弃了这个方案，使用了最初的WebView方案。
+~~在简单的JavaScript函数调用中Zipline执行并没有什么问题，当我测试业务需要使用的JS库时，可能是由于该库依赖了一些浏览器环境的一些对象，出现了一些错误，我尝试通过在 Kotlin 中注入相关定义: `val defineSelfScript = "var self = this;"` 由于时间限制的原因未能解决，最后放弃了这个方案，使用了最初的WebView方案。~~
+
+[2024-11-07-在Android(by zipline)和iOS(by JavaScriptCode)运行JavaScript函数-2.md](2024-11-07-%E5%9C%A8Android%28by%20zipline%29%E5%92%8CiOS%28by%20JavaScriptCode%29%E8%BF%90%E8%A1%8CJavaScript%E5%87%BD%E6%95%B0-2.md)
