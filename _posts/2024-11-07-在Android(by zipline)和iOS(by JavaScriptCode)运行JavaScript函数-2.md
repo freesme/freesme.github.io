@@ -6,7 +6,7 @@ categories: [TIL, Demo]
 ---
 ## zipline-android 调用JavaScript库
 
-接上文 [2024-11-06-在Android中运行JavaScript函数-1.md](2024-11-06-%E5%9C%A8Android%E4%B8%AD%E8%BF%90%E8%A1%8CJavaScript%E5%87%BD%E6%95%B0-1.md)，以下是一个**可用**的通过Zipline调用JavaScript 库的例子：
+接上文 [在Android中运行JavaScript函数-1](https://freesme.github.io/posts/%E5%9C%A8android%E4%B8%AD%E8%BF%90%E8%A1%8Cjavascript%E5%87%BD%E6%95%B0-1/)，以下是一个**可用**的通过Zipline调用JavaScript 库的例子：
 
 ```groovy
 // 引入依赖库
