@@ -15,7 +15,7 @@ https://github.com/valyala/fasthttp
 
 - 使用[“可重用端口”](https://pkg.go.dev/github.com/valyala/fasthttp/reuseport)监听器。通过允许多个进程或线程监听相同的端口，提高服务器对并发连接的处理能力，充分利用多核 CPU 的性能。
 - 每个 CPU 核心运行一个单独的服务器实例，设置 GOMAXPROCS=1（避免多个核心之间的锁竞争，提高单个实例的处理效率）。
-- 使用[taskset](http://linux.die.net/man/1/taskset)将每个服务器实例固定到单独的 CPU 核心上，确保每个实例在独立的核心上运行，减少上下文切换的开销，提高缓存命中率。
+- 使用[taskset](https://linux.die.net/man/1/taskset)将每个服务器实例固定到单独的 CPU 核心上，确保每个实例在独立的核心上运行，减少上下文切换的开销，提高缓存命中率。
 - 确保多队列网卡的中断在 CPU 核心之间均匀分布。有关详细信息，请参阅[这篇文章](https://blog.cloudflare.com/how-to-achieve-low-latency/)。
 - 使用最新版本的 Go，因为每个版本都包含性能改进。
 
@@ -26,7 +26,7 @@ https://github.com/valyala/fasthttp
 
 
 
-- [在生产环境中分析你的程序](http://go.dev/blog/pprof)
+- [在生产环境中分析你的程序](https://go.dev/blog/pprof)
   `go tool pprof --alloc_objects your-program mem.pprof`
   通常比`go tool pprof your-program cpu.pprof`提供更好的优化机会洞察。
 - 为热门路径编写[测试和基准测试](https://pkg.go.dev/testing)。
@@ -90,7 +90,7 @@ b := a[:100]  // is valid, since cap(a) == 100.
 - 所有 fasthttp 函数都接受空的`[]byte`缓冲区
 
 ```go
-statusCode, body, err := fasthttp.Get(nil, "http://google.com/")
+statusCode, body, err := fasthttp.Get(nil, "https://google.com/")
 uintBuf := fasthttp.AppendUint(nil, 1234)
 ```
 
